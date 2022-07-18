@@ -128,7 +128,7 @@ main {
 
 .portada_img {
     width: 475px;
-    margin: 40px 0px;
+    margin: 30px 0px;
 }
 
 #nosotros {
@@ -143,7 +143,7 @@ main {
     font-style: italic;
     color: white;
     text-align: center;
-    line-height: 40px;
+    line-height: 30px;
     background-color: rgb(175, 40, 30);
     margin: 0rem 0 5rem 0;
 
@@ -277,9 +277,9 @@ hr {
     .portada_texto h1 {
         display: block;
         width: 100%;
-        font-size: 40px;
+        font-size: 36px;
         line-height: 40px;
-        padding: 0px 10px;
+        padding: 15px 40px 0px 40px;
     }
 
     .portada_texto p {
@@ -341,17 +341,21 @@ hr {
 @media (max-width:576px) {
     .navbar ul {
         background-color: white;
-        width: 100%;
-        height: calc(100vh - 120px);
+        width: 40%;
+        height: calc(50vh - 120px);
         position: absolute;
         top: 120px;
-        left: 0;
+        right: 0;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         transform: translateX(200%);
     }
 
+.navbar_link {
+        font-size: 16px;
+        font-weight: 600;
+    }
     .navbar i {
         display: block;
     }
