@@ -1,59 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
-    <header>
-        <a href="./index.html"><img class="logo" src="images/logo.png" alt="logo"></a>
-        <nav>
-                <ul class="opciones">
-                <li><a class="paravisitar" href="./index.html">INICIO</a></li>
-               <li><a class="paravisitar" href="./servicios.html">SERVICIOS</a></li>
-               <li><a class="paravisitar" href="./clientes.html">CLIENTES</a></li>
-               <li><a class="paravisitar" href="./contacto.html">CONTACTO</a></li>
-               </ul>
-               
-            <img class="whatsapp" src="images/whatsapp-logo-11.png" alt="whatsapp-logo-11">
+    <header class="header">
+        <img class="logo" src="images/logo.png" alt="logo">
+        <nav class="navbar">
+            <label for="toggle_menu"><i class="fas fa-bars"></i></label>
+            <input type="checkbox" id="toggle_menu">
+            <ul class="navbar_lista">
+                <li><a class="navbar_link" href="#portada">INICIO</a></li>
+                <li><a class="navbar_link" href="#nosotros">NOSOTROS</a></li>
+                <li><a class="navbar_link" href="#servicios">SERVICIOS</a></li>
+                <li><a class="navbar_link" href="#contacto">CONTACTO</a></li>
+            </ul>
         </nav>
     </header>
-    <section>
-        <hr/>
-        <main>
-        <div class="fondo-portada">
-            
-        <div class="texto-portada">
-        <p>Somos una compañía que brinda servicios de catering Premium.</p>
-        <p>Cocinamos con pasión y creatividad como verdaderos artistas obteniendo sabores distintivos.</p>
-        <p>Brindamos servicio para todo tipo y tamaño de eventos que prioricen la calidad y el valor culinario.</p>
-        <p>Movemos nuestra estructura con logística propia eficiente a cualquier lugar de la Argentina.</p>
-        <p>Nos distinguimos por el perfecto balanceo entre profesionalidad y calidez.</p>
+
+    <!-- E3 -->
+    <main>
+        <section id="portada">
+            <div class="portada_texto">
+                <h1>Profesionalidad <span>y calidez...</span></h1>
+                <p>Somos una compañía que brinda servicios de catering Premium.</p>
+
+                <div class="botones_portada">
+                    <a href="#" class="btn_servicios">Servicios</a>
+                    <a href="#" class="btn_mas">Más info</a>
+                </div>
+            </div>
+            <img src="./images/portada.jpg" alt="imagen_portada" class="portada_img">
+        </section>
+        <section id="nosotros">
+            <p> Cocinamos con pasión y creatividad como verdaderos artistas obteniendo sabores distintivos. Brindamos
+                servicio para todo tipo y tamaño de eventos que prioricen la calidad y el valor
+                culinario. Movemos nuestra estructura con logística propia eficiente a cualquier lugar de la Argentina.
+                Nos distinguimos por el perfecto balanceo entre profesionalidad y calidez.
+            </p>
+        </section>
+
+        <!--       E4 -->
+
+        <section id="servicios">
+            <div class="servicios_lista">
+                <a><img class="servicios_img" src="images/portada 1.jpg" alt="mesa"></a>
+                <h1>BUFFET</h1>
+                <p>Gran cantidad de platos</p>
+                <a href="#" class="btn_servicios_lista">MÁS INFO</a>
+            </div>
+            <div class="servicios_lista">
+                <a><img class="servicios_img" src="images/portada 2.jpg" alt="mesa"></a>
+                <h1>COCTEL</h1>
+                <p>Almuerzos o meriendas</p>
+                <a href="#" class="btn_servicios_lista">MÁS INFO</a>
+            </div>
+            <div class="servicios_lista">
+                <a><img class="servicios_img" src="images/portada 3.png" alt="mesa"></a>
+                <h1>BRUNCH</h1>
+                <p>Desayuno más almuerzo</p>
+                <a href="#" class="btn_servicios_lista">MÁS INFO</a>
+            </div>
+
+        </section>
+
+    </main>
+    <footer id="contacto">
+        <div class="contacto_lista">
+                <div class="redes_direccion">
+                <h1> REDES</h1>
+                <ul class="redes">
+                    <li><a href="https://www.facebook.com"><img class="icono_redes" src="images/face.png"
+                                alt="facebook"></a>
+                    </li>
+                    <li><a href="https://www.instagram.com"><img class="icono_redes" src="images/inst.png"
+                                alt="instagram"></a>
+                    </li>
+                    <li><a href="https://www.twitter.com"><img class="icono_redes" src="images/twiter.png"
+                                alt="twitter"></a>
+                    </li>
+                    <li><a href="https://www.linkedin.com"><img class="icono_redes" src="images/linke.png"
+                                alt="linkedin"></a>
+                    </li>
+                </ul>
+                <hr>
+                <h1> UBICACIÓN</h1>
+                <div class="direccion">
+                    <h3>Santo Tomé 3456</h3>
+                    <h4>1417 | Ciudad de Buenos Aires</h4>
+                    <h5>República Argentina</h5>
+                </div>
+             </div>
+                <iframe class="mapa"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.1095646837266!2d-58.49580578505237!3d-34.60139086488134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb624e47b27e5%3A0x328bd1e9dd4d0666!2sVilla%20del%20Parque!5e0!3m2!1ses-419!2sar!4v1658162497758!5m2!1ses-419!2sar"
+                    width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
         </div>
-        <ul class="fotosportada">
-            <li><a><img class="portada" src="images/portada 1.jpg" alt="mesa"></a></li>
-            <li><a><img class="portada" src="images/portada 2.jpg" alt="mesa"></a></li>
-            <li><a><img class="portada" src="images/portada 3.png" alt="mesa"></a></li>
-            </ul>
-            <div class="boton-info">
-            </p><button><a>+ INFO</a></button>
-            
-        </div>
-        
-        </main>
-        <hr/>
-    </section>
-    <footer>
-        <h1 class="encontrarnos"> PODÉS ENCONTRARNOS EN:</h1>
-        <ul class="redes">
-            <li><a href="https://www.facebook.com"><img class="iconoredes" src="images/face.png" alt="facebook"></a></li>
-            <li><a href="https://www.instagram.com"><img class="iconoredes" src="images/inst.png" alt="instagram"></a></li>
-            <li><a href="https://www.twitter.com"><img class="iconoredes" src="images/twiter.png" alt="twitter"></a></li>
-            <li><a href="https://www.linkedin.com"><img class="iconoredes" src="images/linke.png" alt="linkedin"></a></li>
-        </ul>
+<h2>TODOS LOS DERECHOS RESERVADOS | SWEET & SALAD</h2>
     </footer>
 </body>
+
 </html>

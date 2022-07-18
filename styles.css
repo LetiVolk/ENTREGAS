@@ -1,173 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,200&display=swap');
+
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
 }
 
-body {background-image: url(https://ungerboeckdotcomassets.blob.core.windows.net/volumes/content/Additional-Images/Catering/_wide/shutterstock_645095311.jpg);
-    background-size: cover;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-nav {
-    background-color: rgb(190, 160, 100, 0.8);
+.header {
+    height: 120px;
+    width: 100%;
+    padding: 0px 40px;
     display: flex;
     align-items: center;
-    float: right;
-    height: 120px;
-    width: 75%;
-        }
-
-li {
-    padding: 0 40px;
-    cursor: pointer;
-    list-style: none;
-    color: white;
-}
-
-footer {
-    background-color:rgba(190, 160, 100, 0.8);
-    width: 100%;
-    bottom: 0;
-    /*position: absolute;*/
-}
-
-
-.logo {
-    height:120px;
-    margin-top: 10px;
-    margin-left: 40px;
-}
-.opciones {
-    display: flex;
-    text-align: right;
-    font-size: 20px;
-    margin-left: 50px;
-    margin-top: 60px;
-    margin-right: 60px;
-    text-decoration: none;
-    color: white;
-  }
-.paravisitar:link { 
-    text-decoration: none;
-    color: white;
-}
-.paravisitar:visited { 
-    color: white;
-}
-.paravisitar:hover {
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
     background-color: white;
+    z-index: 1;
+}
+
+.header img {
+    height: 80%;
+}
+
+.navbar {
+    display: flex;
+}
+
+.navbar i {
+    font-size: 36px;
     color: rgb(190, 160, 100);
+    display: none;
+}
+
+#toggle_menu {
+    display: none;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 50px;
+    padding: 20px 40px;
+}
+
+.navbar_link {
+    text-decoration: none;
+    color: rgb(190, 160, 100);
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.navbar_link:link {
+    text-decoration: none;
+    color: rgb(190, 160, 100);
+}
+
+.navbar_link:visited {
+    color: rgb(190, 160, 100);
+}
+
+.navbar_link:hover {
+    background-color: rgb(190, 160, 100, 0.8);
+    color: white;
     padding: 10px;
     transition: 1s;
+    border-radius: 20px;
 }
 
-
-.whatsapp {
+main {
     display: flex;
-    position: sticky;
+    flex-direction: column;
     align-items: center;
-    cursor: pointer;
-   }
-.titulosecciones {
-    text-align: center;
-    font-size: 40px;
+    justify-content: center;
+    background-image: url(https://ungerboeckdotcomassets.blob.core.windows.net/volumes/content/Additional-Images/Catering/_wide/shutterstock_645095311.jpg);
+    background-size: cover;
+}
+
+#portada {
+    display: flex;
+    padding: 70px, 0px;
+    width: 90%;
+    justify-content: space-around;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin: 10rem 0 5rem 0;
+}
+
+.portada_texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+}
+
+.portada_texto h1 {
+    font-weight: 700;
+    font-size: 45px;
+    font-style: italic;
+    display: flex;
+    flex-direction: column;
+    color: rgb(175, 40, 30);
+    line-height: 50px;
+}
+
+.portada_texto p {
+    font-weight: 700;
+    font-size: 16px;
+    max-width: 270px;
+    font-style: italic;
+}
+
+.botones_portada {
+    display: flex;
+    gap: 15px
+}
+
+.botones_portada a {
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    font-size: 12px;
+    font-weight: 600;
+    background-color: rgb(175, 40, 30);
     color: white;
+}
+
+.portada_img {
+    width: 475px;
+    margin: 40px 0px;
+}
+
+#nosotros {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    max-width: 850px;
+    padding: 30px 100px;
+    font-weight: 300;
+    font-size: 18px;
+    font-style: italic;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    background-color: rgb(175, 40, 30);
+    margin: 0rem 0 5rem 0;
+
+}
+
+#servicios {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    gap: 60px;
+    margin-bottom: 5rem;
+}
+
+.servicios_lista {
+    display: block;
+    background-color: rgba(255, 255, 255, 0.75);
+    padding: 20px;
+    gap: 40x;
+}
+
+.servicios_lista h1 {
+    font-size: 22px;
+    color: rgb(175, 40, 30);
+}
+
+.servicios_lista p {
+    font-size: 16px;
+    padding: 0px 0px 15px;
+}
+
+.servicios_img {
+    border-radius: 100%;
+    height: 15rem;
+}
+
+.btn_servicios_lista {
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    font-size: 12px;
+    font-weight: 600;
+    background-color: rgb(175, 40, 30);
+    color: white;
+    margin: 50px 0px 20px 0px;
+}
+
+#contacto {
+    background-color: rgb(190, 160, 100);
+    height: 260px;
+    width: 100%;
+    bottom: 0;
+    padding-top: 20px;
+}
+
+.contacto_lista {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around
 }
 
 hr {
     background-color: rgb(175, 40, 30);
-    margin-top: 40px;
-    height: 10px;
-    border: none;
-    
-    
+    border: 0;
+    height: 1px;
+    margin-top: 10px;
 }
-main {
+
+#contacto h1 {
+    text-align: left;
+    font-size: 12px;
+    color: rgb(175, 40, 30);
+    padding: 15px 0px 0px;
+}
+
+#contacto ul {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 70px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-p {
-    padding: 5px 0;
-    color: rgb(175, 40, 30);
-}
-
-.texto-portada {
-    text-align: center;
-    font-size: 20px;
- 
-    padding: 30px;
-        }
-.fondo-portada {
-    background-color: rgba(255, 255, 255, 0.7);
-    bottom: 0;
-    }
-
-.fotosportada {
-    display: flex;
-    align-items: center;
-    padding: 50px 0px 80px 0px
-       }
-
-.portada {
-    width: 230px;
-    border-radius: 100%;
-}
-button {
-    display: flex;
-    align-items: center;
+    gap: 100px;
     text-decoration: none;
-    padding: 20px;
-    border: none;
+    list-style: none;
+    margin: 10px 0px;
+}
+
+.icono_redes {
+    height: 40px;
+    cursor: pointer;
+}
+
+.direccion {
+    color: white;
+    text-align: left;
+}
+
+#contacto h2 {
+    text-align: center;
+    font-size: 10px;
+    color: rgb(190, 160, 100);
+    padding: 5px;
     background-color: rgb(175, 40, 30);
-    color: white;
-    font-size: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 200px;
-    cursor: pointer;
-    border-radius: 10%;
-    }
-button:link {
-    text-decoration: none;
-    color: white;
-}
-button:visited {
-    color: white;
-}
-button:hover {
-    color: rgb(175, 40, 30);
-    background-color: white;
-    transition: 1s;
-}
-
-.encontrarnos {
-    text-align: center;
-    font-size: 15px;
-    color: white;
     margin-top: 10px;
-    background-color: rgba(255, 255, 255, 0.171);
-    padding: 5px 0;
-}
-.redes {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly
-}
-
-.iconoredes {
-    height: 30px;
-    cursor: pointer;
-    padding: 20px 0 15px 0;
 }
 
 
- /* Aperitivo o Coffee break
-        Buffet, gran cantidad de platos.
-        Cóctel, ideal para almuerzos o meriendas.
-        Recepción, combina buffet o camareros.
-        Brunch, une el desayuno y el almuerzo.
-        Box lunch, para eventos informales */
+
+@media (max-width:992px) {
+    .navbar ul {
+        gap: 20px;
+        padding: 20px 0px;
+    }
+
+    .navbar_link {
+        font-size: 14px;
+    }
+
+    #portada {
+        display: block;
+    }
+
+    .portada_texto {
+        text-align: center;
+        width: 100%;
+        align-items: center;
+        gap: 20px;
+        margin-top: 20px;
+    }
+
+    .portada_texto h1 {
+        display: block;
+        width: 100%;
+        font-size: 40px;
+        line-height: 40px;
+        padding: 0px 10px;
+    }
+
+    .portada_texto p {
+        max-width: 80%;
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .botones_portada {
+        justify-content: center;
+    }
+
+    .portada_img {
+        justify-content: center;
+        width: 100%;
+    }
+
+    #nosotros {
+        font-size: 16px;
+        padding: 30px 20px;
+    }
+
+    #servicios {
+        display: block;
+        width: 55%;
+
+    }
+
+    .servicios_lista {
+        width: 100%;
+        padding: 40px 0px;
+        margin-bottom: 40px;
+    }
+
+    #contacto {
+        height: 450px;
+    }
+
+    .contacto_lista {
+        display: block;
+
+    }
+
+    #contacto h1 {
+        text-align: center;
+        padding: 10px 0px 0px;
+    }
+
+    .direccion {
+        text-align: center;
+    }
+
+    .mapa {
+        width: 60%;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width:576px) {
+    .navbar ul {
+        background-color: white;
+        width: 100%;
+        height: calc(100vh - 120px);
+        position: absolute;
+        top: 120px;
+        left: 0;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transform: translateX(200%);
+    }
+
+    .navbar i {
+        display: block;
+    }
+
+    #servicios {
+        width: 70%;
+    }
+
+    .servicios_img {
+        height: 12rem;
+    }
+
+    #contacto ul {
+        gap: 40px;
+    }
+
+    #toggle_menu:checked~.navbar_lista {
+        transform: translateX(0%);
+    }
+}
